@@ -2,9 +2,9 @@ import portrait from '../assets/karina.jpg'
 import { Leaf } from './decor'
 
 const CREDENTIALS = [
-  'Absolwentka psychologii na Uniwersytecie Łódzkim',
-  'Studium Psychoterapii Dzieci i Młodzieży - Szkoła Psychoterapii Gestalt w Warszawie',
-  'Szkoła Psychoterapii Gestalt - w trakcie, 3. rok',
+  'Psychoterapeutka Gestalt w trakcie szkolenia (3 rok)',
+  'Ukończyłam Studium Psychoterapii Dzieci i Młodzieży - Szkoła Psychoterapii Gestalt w Warszawie',
+  'Psycholog (Uniwersytet Łódzki)',
   '14 lat doświadczenia jako psycholog szkolny w pracy z dziećmi, młodzieżą i rodzicami',
 ]
 
@@ -45,8 +45,7 @@ export default function About() {
               ))}
             </ul>
             <p className="about__supervision">
-              Pracuję pod stałą superwizją - grupową i&nbsp;indywidualną - co daje mi możliwość
-              konsultowania i&nbsp;upewniania się dla dobra pracy z&nbsp;drugim człowiekiem.
+              Pracuje pod stałą superwizją grupową i&nbsp;indywidualną.
             </p>
           </div>
 
@@ -80,6 +79,12 @@ export default function About() {
             </li>
           ))}
         </ul>
+
+        <p className="values-note reveal">
+          Nadrzędnymi wartościami w&nbsp;pracy z&nbsp;moimi klientami są ich dobrostan,
+          prawidłowy rozwój oraz możliwość korzystania z&nbsp;własnego potencjału. Pracuję pod
+          stałą superwizją - grupową i&nbsp;indywidualną.
+        </p>
       </div>
     </section>
   )

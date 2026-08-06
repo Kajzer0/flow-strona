@@ -658,6 +658,7 @@ section[id] {
 .about__portrait figcaption {
   position: relative;
   margin-top: 1.5rem;
+  padding-left: 1.5rem;
   font-size: 0.92rem;
   color: var(--ink-soft);
   display: grid;
@@ -806,6 +807,15 @@ section[id] {
   color: var(--aqua-200);
 }
 
+.gestalt__em {
+  color: var(--leaf-amber);
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(221, 143, 61, 0.55);
+  text-underline-offset: 4px;
+}
+
 @media (max-width: 860px) {
   .gestalt__grid {
     grid-template-columns: 1fr;
@@ -945,7 +955,7 @@ section[id] {
   }
 }
 
-.offer__supervision {
+.values-note {
   margin-top: clamp(2rem, 4vw, 2.8rem);
   padding: 1.2rem 1.5rem;
   background: var(--aqua-100);
@@ -1251,5 +1261,38 @@ section[id] {
   .reveal {
     opacity: 1;
     transform: none;
+  }
+}
+
+/* ---------- toast (tel/sms na desktopie) ---------- */
+
+.phone-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translate(-50%, 1rem);
+  z-index: 100;
+  max-width: min(92vw, 30rem);
+  background: var(--petrol-900);
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  border-radius: 12px;
+  padding: 0.8rem 1.1rem;
+  box-shadow: 0 10px 30px rgba(7, 64, 75, 0.28);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  text-align: center;
+}
+
+.phone-toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .phone-toast {
+    display: none;
   }
 }

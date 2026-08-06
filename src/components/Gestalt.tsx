@@ -27,15 +27,16 @@ export default function Gestalt() {
           <blockquote>
             „W&nbsp;gabinecie jestem z&nbsp;moimi klientami w&nbsp;autentycznej relacji, która
             dzieje się tu i&nbsp;teraz… z&nbsp;myślą, że jej korzenie sięgają przeszłości,
-            a&nbsp;pracujemy na owoce przyszłości.”
+            i&nbsp;pracujemy na owoce przyszłości.”
           </blockquote>
         </div>
 
         <div className="gestalt__body">
           <p>
-            Psychoterapia Gestalt to nurt <strong>humanistyczny</strong> - skoncentrowany
-            na&nbsp;człowieku, jego potencjale do&nbsp;samorozwoju, autentyczności
-            i&nbsp;samorealizacji. Oparty jest na&nbsp;empatii i&nbsp;relacji terapeutycznej.
+            Psychoterapia Gestalt to nurt <strong className="gestalt__em">humanistyczny</strong>{' '}
+            - skoncentrowany na&nbsp;człowieku, jego potencjale do&nbsp;samorozwoju,
+            autentyczności i&nbsp;samorealizacji. Oparty jest na&nbsp;empatii i&nbsp;relacji
+            terapeutycznej.
           </p>
           <p>
             Moim głównym celem jest towarzyszenie klientom w&nbsp;odkrywaniu swoich uczuć,

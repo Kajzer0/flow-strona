@@ -80,7 +80,7 @@ const SERVICES: Service[] = [
       </>
     ),
     time: '150 min (2,5 h)',
-    price: '150 zł',
+    price: '75 zł',
     icon: <GroupIcon />,
     image: offer4,
     imageAlt: 'Artystyczny, liściasty wzór symbolizujący wspólnotę i wzajemne wsparcie',
@@ -118,12 +118,6 @@ export default function Offer() {
             </article>
           ))}
         </div>
-
-        <p className="offer__supervision reveal">
-          Nadrzędnymi wartościami w&nbsp;pracy z&nbsp;moimi klientami są ich dobrostan,
-          prawidłowy rozwój oraz możliwość korzystania z&nbsp;własnego potencjału. Pracuję pod
-          stałą superwizją - grupową i&nbsp;indywidualną.
-        </p>
       </div>
     </section>
   )

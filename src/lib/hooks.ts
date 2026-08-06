@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { PHONE_DISPLAY } from './const'
 
 /**
  * Adds `.is-visible` to every `.reveal` element as it enters the viewport.
@@ -53,6 +54,45 @@ export function useActiveSection(ids: readonly string[]) {
   }, [ids])
 
   return active
+}
+
+/**
+ * On desktop, tel:/sms: links cannot dial — show a toast with the number instead.
+ * On touch devices the browser handles them natively, so nothing happens here.
+ */
+export function usePhoneToast(): { toast: string | null } {
+  const [toast, setToast] = useState<string | null>(null)
+  const timerRef = useRef<number | undefined>(undefined)
+
+  useEffect(() => {
+    if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) return
+
+    const onClick = (event: MouseEvent) => {
+      const target = event.target as HTMLElement | null
+      const link = target?.closest?.('a[href^="tel:"], a[href^="sms:"]') as
+        | HTMLAnchorElement
+        | null
+      if (!link) return
+
+      event.preventDefault()
+      const isSms = link.getAttribute('href')?.startsWith('sms:') ?? false
+      setToast(
+        isSms
+          ? `Na telefonie otworzy się czat SMS z numerem ${PHONE_DISPLAY}.`
+          : `Na telefonie otworzy się aplikacja z numerem ${PHONE_DISPLAY}.`,
+      )
+      window.clearTimeout(timerRef.current)
+      timerRef.current = window.setTimeout(() => setToast(null), 3500)
+    }
+
+    document.addEventListener('click', onClick)
+    return () => {
+      document.removeEventListener('click', onClick)
+      window.clearTimeout(timerRef.current)
+    }
+  }, [])
+
+  return { toast }
 }
 
 /**
