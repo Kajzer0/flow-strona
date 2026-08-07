@@ -45,7 +45,7 @@ export default function About() {
               ))}
             </ul>
             <p className="about__supervision">
-              Pracuje pod stałą superwizją grupową i&nbsp;indywidualną.
+              Pracuję pod stałą superwizją grupową i&nbsp;indywidualną.
             </p>
           </div>
 
@@ -82,8 +82,7 @@ export default function About() {
 
         <p className="values-note reveal">
           Nadrzędnymi wartościami w&nbsp;pracy z&nbsp;moimi klientami są ich dobrostan,
-          prawidłowy rozwój oraz możliwość korzystania z&nbsp;własnego potencjału. Pracuję pod
-          stałą superwizją - grupową i&nbsp;indywidualną.
+          prawidłowy rozwój oraz możliwość korzystania z&nbsp;własnego potencjału.
         </p>
       </div>
     </section>

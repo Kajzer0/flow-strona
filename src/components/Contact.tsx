@@ -19,7 +19,7 @@ export default function Contact() {
               {PHONE_DISPLAY}
             </a>
             <p className="contact__sms">
-              Jeśli nie odbieram - jestem prawdopodobnie w&nbsp;trakcie sesji.
+              Jeśli nie odbieram, jestem prawdopodobnie w&nbsp;trakcie sesji.
               <br />
               <strong>Napisz SMS, oddzwonię.</strong>
             </p>

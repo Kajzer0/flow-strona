@@ -26,7 +26,7 @@ export default function Gestalt() {
           <h2 className="section-title section-title--light">Psychoterapia Gestalt</h2>
           <blockquote>
             „W&nbsp;gabinecie jestem z&nbsp;moimi klientami w&nbsp;autentycznej relacji, która
-            dzieje się tu i&nbsp;teraz… z&nbsp;myślą, że jej korzenie sięgają przeszłości,
+            dzieje się tu i&nbsp;teraz… z&nbsp;myślą, że jej korzenie sięgają przeszłości
             i&nbsp;pracujemy na owoce przyszłości.”
           </blockquote>
         </div>
@@ -44,8 +44,8 @@ export default function Gestalt() {
             możliwość decydowania o&nbsp;sobie.
           </p>
           <p>
-            To piękna droga, którą razem współtworzymy - a&nbsp;jej głównym celem jest
-            osiągnięcie dobrostanu klienta.
+            To piękna droga, którą razem współtworzymy. 
+            Bywa trudna i wymagająca, ale jej głównym celem jest osiągnięcie dobrostanu klienta.
           </p>
         </div>
       </div>
