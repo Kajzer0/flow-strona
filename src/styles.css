@@ -970,6 +970,54 @@ section[id] {
   }
 }
 
+.offer__modes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.4rem;
+  margin-top: clamp(1.6rem, 3vw, 2.4rem);
+  padding: 1.35rem 1.6rem;
+  background: var(--petrol-800);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+.offer__modes-text {
+  margin: 0;
+  color: var(--aqua-200);
+  font-size: 1.05rem;
+}
+
+.offer__modes-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.offer__modes-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--panel);
+  font-weight: 650;
+  font-size: 1.12rem;
+}
+
+.offer__modes-item svg {
+  flex-shrink: 0;
+  color: var(--aqua-200);
+}
+
+.offer__modes-sep {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 1.05rem;
+}
+
 /* ---------- bridge (zaproszenie) ---------- */
 
 .bridge {

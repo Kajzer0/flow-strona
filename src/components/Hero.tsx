@@ -53,7 +53,7 @@ export default function Hero() {
           FLOW · Gabinet psychoterapii i psychoedukacji · Andrespol
         </p>
         <h1 className="hero__title">
-          Tu i&nbsp;teraz… <em>dla lepszego potem.</em>
+          Tu i&nbsp;teraz… <em>dla lepszego potem</em>
         </h1>
         <p className="hero__lead">
           Nazywam się <strong>Karina Sokołowska</strong>. Jestem psychologiem

@@ -81,7 +81,7 @@ export default function About() {
         </ul>
 
         <p className="values-note reveal">
-          Nadrzędnymi wartościami w&nbsp;pracy z&nbsp;moimi klientami są ich dobrostan,
+          Nadrzędnymi wartościami w&nbsp;pracy z&nbsp;moimi klientami są: ich dobrostan,
           prawidłowy rozwój oraz możliwość korzystania z&nbsp;własnego potencjału.
         </p>
       </div>

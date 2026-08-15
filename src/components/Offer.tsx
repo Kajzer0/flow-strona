@@ -118,6 +118,25 @@ export default function Offer() {
             </article>
           ))}
         </div>
+
+        <div className="offer__modes reveal">
+          <p className="offer__modes-text">
+            Wszystkie sesje i&nbsp;konsultacje prowadzę:
+          </p>
+          <ul className="offer__modes-badges">
+            <li className="offer__modes-item">
+              <BuildingIcon />
+              Stacjonarnie
+            </li>
+            <li className="offer__modes-sep" aria-hidden="true">
+              oraz
+            </li>
+            <li className="offer__modes-item">
+              <LaptopIcon />
+              Online
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   )
@@ -173,6 +192,36 @@ function GroupIcon() {
       <circle cx="17.6" cy="9.2" r="2" />
       <path d="M2.8 18.6c.4-2.7 1.9-4.3 4.1-4.6M21.2 18.6c-.4-2.7-1.9-4.3-4.1-4.6" />
       <path d="M8.3 19.8c.4-3.1 1.8-4.8 3.7-4.8s3.3 1.7 3.7 4.8" />
+    </svg>
+  )
+}
+
+const modeIconProps = {
+  width: 20,
+  height: 20,
+  viewBox: '0 0 24 24',
+  fill: 'none',
+  stroke: 'currentColor',
+  strokeWidth: 1.6,
+  strokeLinecap: 'round',
+  strokeLinejoin: 'round',
+} as const
+
+function BuildingIcon() {
+  return (
+    <svg {...modeIconProps} aria-hidden="true">
+      <rect x="4.5" y="3.5" width="15" height="17" rx="2" />
+      <path d="M9 20.5V16h6v4.5" />
+      <path d="M9 7.5h.01M12 7.5h.01M15 7.5h.01M9 11h.01M12 11h.01M15 11h.01" />
+    </svg>
+  )
+}
+
+function LaptopIcon() {
+  return (
+    <svg {...modeIconProps} aria-hidden="true">
+      <rect x="4.5" y="4.5" width="15" height="10.5" rx="1.5" />
+      <path d="M2.5 19.5h19" />
     </svg>
   )
 }
