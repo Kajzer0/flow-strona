@@ -59,7 +59,7 @@ export default function About() {
             />
             <figcaption>
               <strong>Karina Sokołowska</strong>
-              psycholog, psychoterapeutka
+              Psycholog, Psychoterapeuta
             </figcaption>
           </figure>
         </div>
