@@ -1,4 +1,4 @@
-import portrait from '../assets/karina.jpg'
+import portrait from '../assets/karina3.jpg'
 import { Leaf } from './decor'
 
 const CREDENTIALS = [
@@ -54,8 +54,8 @@ export default function About() {
               src={portrait}
               alt="Karina Sokołowska - psycholog i psychoterapeutka"
               loading="lazy"
-              width={1065}
-              height={1600}
+              width={1544}
+              height={2312}
             />
             <figcaption>
               <strong>Karina Sokołowska</strong>
