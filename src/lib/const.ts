@@ -1,6 +1,11 @@
 export const PHONE_DISPLAY = '792 610 556'
 export const PHONE_TEL = '+48792610556'
 
+export const SOCIAL_LINKS = [
+  { name: 'Instagram', url: 'https://www.instagram.com/flow_psychoterapia/' },
+  { name: 'Facebook', url: 'https://www.facebook.com/profile.php?id=61552106833232' },
+] as const
+
 export const NAV_LINKS = [
   { id: 'o-mnie', label: 'O mnie' },
   { id: 'gestalt', label: 'Nurt Gestalt' },

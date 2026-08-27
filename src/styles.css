@@ -1257,6 +1257,21 @@ section[id] {
   font-size: 1.05rem;
 }
 
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  align-items: center;
+  margin-top: 0.3rem;
+}
+
+.footer__social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.95rem;
+}
+
 .footer__bottom {
   display: flex;
   flex-wrap: wrap;
