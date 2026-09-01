@@ -79,7 +79,7 @@ const SERVICES: Service[] = [
         wkraczających w&nbsp;dorosłość. Jeśli szukasz grupy wsparcia - napisz do mnie.
       </>
     ),
-    time: '150 min (2,5 h)',
+    time: '120 min (2 h)',
     price: '75 zł',
     icon: <GroupIcon />,
     image: offer4,
